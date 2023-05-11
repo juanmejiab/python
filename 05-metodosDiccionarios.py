@@ -4,25 +4,25 @@ diccionario = {
     "edad":8
 }
 
-diccionario['nombre'] # Obtener el contenido de un elemento del diccionario
+diccionario['nombre']            # Obtener el contenido de un elemento del diccionario
 
-diccionario.get('nombre') # Obtener el contenido de un elemento del diccionario
+diccionario.get('nombre')        # Obtener el contenido de un elemento del diccionario
 
-diccionario['edad'] = 10 # Modificar un elemento del diccionario
+diccionario['edad'] = 10         # Modificar un elemento del diccionario
 
-len(diccionario) # Obtener la longitud del diccionario.
+len(diccionario)                 # Obtener la longitud del diccionario.
 
 diccionario['ciudad']='Medellin' # Agregar elemento al diccionario
 
-diccionario.pop('ciudad') # Eliminar un elemento del diccionario indicando la llave
+diccionario.pop('ciudad')        # Eliminar un elemento del diccionario indicando la llave
 
-diccionario.popitem() # Eliminar el ultimo elemento agregado al diccionario
+diccionario.popitem()            # Eliminar el ultimo elemento agregado al diccionario
 
-del diccionario['apellido'] # Eliminar un elemento del diccionario indicando la llave
+del diccionario['apellido']      # Eliminar un elemento del diccionario indicando la llave
 
 diccionario2 = diccionario.copy() # Sacar una copia del diccionario
 
-diccionario2.clear() # Elimina todos los elementos del diccionario
+diccionario2.clear()              # Elimina todos los elementos del diccionario
 
 # Diccionarios anidados
 
