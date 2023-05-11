@@ -22,6 +22,12 @@ del diccionario['apellido']      # Eliminar un elemento del diccionario indicand
 
 diccionario2 = diccionario.copy() # Sacar una copia del diccionario
 
+print(diccionario.items())        # Retorna una lista de tuplas con los valores del diccionario
+
+d2 = {}
+d2.update(diccionario)            # Combina los valores de diccionario en d2
+print(d2)
+
 diccionario2.clear()              # Elimina todos los elementos del diccionario
 
 dictionary = dict([                 # Crear un diccionario con la funcion dict
@@ -29,6 +35,8 @@ dictionary = dict([                 # Crear un diccionario con la funcion dict
                 ('Edad', 12)
                 ])
 print(dictionary)
+
+
 
 # Diccionarios anidados
 personas = {
