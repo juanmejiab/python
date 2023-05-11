@@ -24,8 +24,13 @@ diccionario2 = diccionario.copy() # Sacar una copia del diccionario
 
 diccionario2.clear()              # Elimina todos los elementos del diccionario
 
-# Diccionarios anidados
+dictionary = dict([                 # Crear un diccionario con la funcion dict
+                ('Nombre', 'David'), 
+                ('Edad', 12)
+                ])
+print(dictionary)
 
+# Diccionarios anidados
 personas = {
     "Juan": {
         "nombre":"Juan Gomez",
