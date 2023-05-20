@@ -18,5 +18,3 @@ print(a < b) # Menor que
 print(a > b) # Mayor que
 print(a <= b) # Menor o igual que
 print(a >= b) # Mayor o igual que
-
-

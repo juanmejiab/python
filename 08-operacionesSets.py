@@ -36,8 +36,8 @@ print(interseccion)
 diferencia = frutas.difference(fruta)   # Retorna los elementos que no se repiten entre ambos
 print(diferencia)
 
-diferencia_simetrica = frutas.symmetric_difference(fruta) # Diferencia simetrica
-print(diferencia_simetrica)
+diferencia_simetrica = frutas.symmetric_difference(fruta) # Retorna la union de frutas y futa menos 
+print(diferencia_simetrica)                               # su interseccion
 
 miSet = frutas.issuperset({'mango', 'pera'})
 print(miSet)
