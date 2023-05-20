@@ -2,7 +2,8 @@
 frutas = {'manzana', 'pera', 'mango', 'guanabana', 'mango'}
 print(frutas)
 
-fruta = set('mango')                    # Funcion para crear un set (toma 1 argumento)
+# Funcion para crear un set (toma 1 argumento)
+fruta = set('mango')
 print(fruta)
 
 # Tipo 2: sets inmutables
@@ -30,13 +31,15 @@ print(union)
 
 interseccion = frutas.intersection(     # Interseccion de dos sets (|)
     {'pera', 'guayaba', 'mango'}
-    )
+)
 print(interseccion)
 
-diferencia = frutas.difference(fruta)   # Retorna los elementos que no se repiten entre ambos
+# Retorna los elementos que no se repiten entre ambos
+diferencia = frutas.difference(fruta)
 print(diferencia)
 
-diferencia_simetrica = frutas.symmetric_difference(fruta) # Retorna la union de frutas y futa menos 
+diferencia_simetrica = frutas.symmetric_difference(
+    fruta)  # Retorna la union de frutas y futa menos
 print(diferencia_simetrica)                               # su interseccion
 
 miSet = frutas.issuperset({'mango', 'pera'})

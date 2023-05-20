@@ -4,7 +4,7 @@ n = 2
 
 # Operadores para concatenar
 print(a + b)
-print(a , b)
+print(a, b)
 
 # Operador para replicar
 print(a * n)
@@ -28,4 +28,4 @@ print(a[0])         # Imprime el caracter en la posicion 0
 print(a[-1])        # Imprime el caracter en la ultima posicion
 print(a[0:3])       # Imprime los caracteres en un rango
 
-a.split() # Separar un string y convertirlo en lista
+a.split()  # Separar un string y convertirlo en lista

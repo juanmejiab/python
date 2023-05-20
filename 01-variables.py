@@ -7,4 +7,3 @@ print(b)
 c, d = 30, 56
 print(c)
 print(d)
-
