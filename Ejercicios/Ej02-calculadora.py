@@ -12,13 +12,13 @@ for x in range(1, 3):
 operando = input('Ingrese la operación: ')
 
 
-def operaciones(operador):
+def operaciones(operador: str) -> float:
     if operador == '+':
-        print('El resultado es:', y[0] + y[1])
+        print('El resultado es:', float(y[0] + y[1]))
     elif operador == '-':
-        print('El resultado es:', y[0] - y[1])
+        print('El resultado es:', float(y[0] - y[1]))
     elif operador == '*':
-        print('El resultado es:', y[0] * y[1])
+        print('El resultado es:', float(y[0] * y[1]))
     elif operador == '/':
         print('El resultado es:', y[0] / y[1])
     else:
