@@ -13,13 +13,16 @@ if __name__ == '__main__':
     scores.sort()
 
     name_score_sorted = []
-    x = 1
-    while x < 2:
-        y = scores[x]
-        for names in name_score_list:
-            if y == names[1]:
-                name_score_sorted.append(names)
-        x += 1
+    x = 0
+    while x < len(scores)-1:
+        if scores[x] != scores[x+1]:
+            y = scores[x+1]
+            for names in name_score_list:
+                if y == names[1]:
+                    name_score_sorted.append(names)
+            break
+        else:
+            x += 1
     name_score_sorted.sort()
 
     for x in name_score_sorted:
