@@ -35,7 +35,7 @@ print(f'El area del rectangulo es {rect1.area()}')
 
 # Herencia
 class Administrador(Usuario):
-    # Extendiendo el constructor del metodo padre
+    # Extendiendo el constructor de la clase padre
     def __init__(self, nombre: str, apellido: str, ciudad: str,
                  cargo: str) -> None:
         Usuario.__init__(self, nombre, apellido, ciudad)
