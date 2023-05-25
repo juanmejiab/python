@@ -1,4 +1,4 @@
-a = 'Hola'
+a = '   Hola juan'
 b = 'Mundo'
 n = 2
 
@@ -22,6 +22,12 @@ print(ord('a'))     # Retorna el Unicode de un solo caracter
 print(chr(129363))  # Retorna el caracter a partidr del Unicode
 print(len(a))       # Retorna la longitud de un string
 print(str(2))       # Convierte un objeto en string
+print(a.upper())    # Imprime todo el string en mayuscula
+print(a.lower())    # Imprime todo el string en minuscula
+print(a.title())    # Imprime en mayuscula la primera letra de cada palabra
+print(a.strip())    # Elimina espacios vacios al inicio de un string
+print(a.replace(    # Cambia el contenido del primer argumento por el segundo
+    'u', 'kj'))
 
 # Indeces
 print(a[0])         # Imprime el caracter en la posicion 0
