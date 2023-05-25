@@ -25,3 +25,9 @@ class Perro(Animal):
 
 
 labrador = Perro('Rush', 'Labrador')
+siames = Gato('Tommy', 'Siames', 'Maullido')
+
+labrador.saludar()
+
+siames.saludar()
+siames.maullar()
