@@ -1,8 +1,8 @@
-x = 5  # Entero
-y = 'Esto es un string'  # String
-z = 5.676  # Float\
+entero = 5  # Entero
+string = 'Esto es un string'  # String
+float = 5.676  # Float
 
-print(x, y, z)
+print(entero, string, float)
 
 listas = ['Juan', 8, 'Pedro']  # Puede tener numeros o strings
 
