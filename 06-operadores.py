@@ -18,3 +18,8 @@ print(a < b)  # Menor que
 print(a > b)  # Mayor que
 print(a <= b)  # Menor o igual que
 print(a >= b)  # Mayor o igual que
+
+
+# Metodos
+print(round(2.4))  # Retorna el entero mas cercano
+print(abs(-2.9))   # Retorna el valor absoluto de un numero
