@@ -45,3 +45,18 @@ diccionario = {
 
 for x in diccionario.values():
     print(x)
+
+# Uso de condicionales dentro de un ciclo
+exitoso = False
+for x in range(1, 4):
+    print('Intentando')
+    if exitoso:
+        print('Intento exitoso')
+        break
+else:
+    print('El intento no fue exitoso')
+
+# Ciclos anidados
+for x in range(3):
+    for y in range(2):
+        print(f'({x}, {y})')
