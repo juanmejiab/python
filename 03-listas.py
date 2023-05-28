@@ -11,6 +11,9 @@ print(zeros)
 lista_combinada = listas + zeros
 print(lista_combinada)
 
+# Obtener la longitud de una lista
+print(len(lista_combinada))
+
 # Acceder a elementos de una lista
 print(lista_combinada[0])
 print(lista_combinada[-1])
@@ -59,7 +62,7 @@ print(listas)
 listas.pop(1)
 print(listas)
 
-# Delete permite borrar un rango de elementos
+# Del permite borrar un rango de elementos
 del listas[0:3]
 print(listas)
 
@@ -75,15 +78,54 @@ print(listas)
 lista2 = listas.copy()
 print(listas, lista2)
 
-lista2.append(8)
-lista2.count(8)               # Contar un elemento dado en la lista
-print(len(lista2))            # Obtener la longitud de una lista
-print(len(listas))
+# Hallar elementos de la lista
+# El metodo index retorna la posicion del elemento ingresado
+print(listas.index('Pedro'))
 
+# El metodo count retorna la cantidad de veces que se repite un
+# elemento de la lista
+print(listas.count('Pedro'))
 
-listas.reverse()              # Ordena de atras para adelante una lista
-print(listas)
-
+# Ordenando elementos de la lista
 lista3 = [5, 10, 1, 0.01, 22]
-lista3.sort()                 # Ordena la lista de menor a mayor
+
+# Ordena de atras para adelante una lista
+lista3.reverse()
 print(lista3)
+
+# Ordenar la lista de menor a mayor
+# Ordena los elementos dentro de la misma lista
+lista3.sort()
+
+# Este metodo retorna una nueva lista con los elementos ordenados
+sorted(lista3)
+print(lista3)
+
+# Ordenar la lista de mayor a menor
+lista3.sort(reverse=True)
+
+# Este metodo retorna una nueva lista con los elementos ordenados
+sorted(lista3, reverse=True)
+print(lista3)
+
+# Funcion lambda
+items = [
+    ('Producto1', 10),
+    ('Producto2', 32),
+    ('Producto3', 20)
+]
+
+# En este fragmento, Python toma cada elemento de la lista y lo pasa a
+# la funcion definida, la cual retorna el elemento en la posicion 1 de la tupla
+# que en este caso es el precio
+items.sort(key=lambda item: item[1])
+print(items)
+
+# Funcion map
+# La funcion map retorna un iterable
+precios = list(map(lambda item: item[1], items))
+print(precios)
+
+# Funcion filter
+filtro = list(filter(lambda item: item[1] >= 11, items))
+print(filtro)
