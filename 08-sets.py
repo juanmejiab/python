@@ -26,10 +26,10 @@ print(frutas2)
 frutas2.clear()                         # Elimina todos los elementos del set
 print(frutas2)
 
-union = frutas.union(fruta)             # Union de dos sets (&)
+union = frutas.union(fruta)             # Union de dos sets (|)
 print(union)
 
-interseccion = frutas.intersection(     # Interseccion de dos sets (|)
+interseccion = frutas.intersection(     # Interseccion de dos sets (&)
     {'pera', 'guayaba', 'mango'}
 )
 print(interseccion)
@@ -38,9 +38,10 @@ print(interseccion)
 diferencia = frutas.difference(fruta)
 print(diferencia)
 
+# Retorna la union de frutas y fruta menos su interseccion
 diferencia_simetrica = frutas.symmetric_difference(
-    fruta)  # Retorna la union de frutas y futa menos
-print(diferencia_simetrica)                               # su interseccion
+    fruta)
+print(diferencia_simetrica)
 
 miSet = frutas.issuperset({'mango', 'pera'})
 print(miSet)
