@@ -126,6 +126,22 @@ print(items)
 precios = list(map(lambda item: item[1], items))
 print(precios)
 
+# Mismo resultado aplicando list comprenhension
+# ----------------Estructura------------------
+# [expresion ciclo (condicion opcional)]
+precios = [item[1] for item in items]
+print(precios)
+
 # Funcion filter
 filtro = list(filter(lambda item: item[1] >= 11, items))
 print(filtro)
+
+# Mismo resultado aplicando list comprenhension
+filtro = [item for item in items if item[1] >= 11]
+print(filtro)
+
+# Funcion zip
+lista1 = [1, 2, 19]
+lista2 = [3, 6, 4]
+
+print(list(zip(lista1, lista2)))
