@@ -57,3 +57,7 @@ personas = {
 personas['Juan']['nombre']  # Acceder a un valor de un diccionario anidado
 personas.popitem()
 personas.pop('Juan')
+
+# Dictionary comprenhensions
+valores = {x: x * 2 for x in range(5)}
+print(valores)
