@@ -12,9 +12,8 @@ if __name__ == '__main__':
     name_score_sorted = []
     for x in range(len(scores)-1):
         if scores[x] != scores[x+1]:
-            y = scores[x+1]
             for names in name_score_list:
-                if y == names[1]:
+                if scores[x+1] == names[1]:
                     name_score_sorted.append(names)
             break
 
