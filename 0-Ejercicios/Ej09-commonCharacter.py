@@ -11,6 +11,7 @@ for x in range(len(character_count)-1):
     if character_count[x][1] == character_count[x+1][1]:
         most_common_character.append(character_count[x][0])
     else:
+        # revisar
         most_common_character.append(character_count[x][0])
         break
 
