@@ -10,3 +10,6 @@ cantidad = 2
 
 print(f"El valor total es: {calcular_total(valor, cantidad)}")
 inventario.mostrar_inventario()
+
+# La funcion dir muestra todos los atributos y metodos de un modulo
+print(dir(ventas))
