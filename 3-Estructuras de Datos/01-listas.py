@@ -127,7 +127,7 @@ precios = list(map(lambda item: item[1], items))
 print(precios)
 
 # Mismo resultado aplicando list comprenhension
-# ----------------Estructura------------------
+# ---------------- Estructura ------------------
 # [expresion ciclo (condicion opcional)]
 precios = [item[1] for item in items]
 print(precios)

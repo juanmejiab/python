@@ -3,9 +3,9 @@ import json
 from pathlib import Path
 
 peliculas = json.loads(
-    Path(r"6-Python Standard Library\archivos\cine.sqlite3").read_text())
+    Path(r"6-Python Standard Library\archivos\data.csv").read_text())
 
-with sqlite3.connect(r"6-Python Standard Library\archivos\data.csv") as conn:
+with sqlite3.connect(r"6-Python Standard Library\archivos\cine.sqlite3") as conn:
     # Creacion de una sentencia que luego sera ejecutada para hacer cambios a
     # la base de datos, los signos de interrogacion su usan para mas adelante
     # indicar los valores que tendran.
