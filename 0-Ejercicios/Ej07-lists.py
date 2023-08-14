@@ -3,7 +3,7 @@ if __name__ == '__main__':
     arr = []
 
     for _ in range(N):
-        operation = input().split(" ")
+        operation = input().split()
         if operation[0] == "insert":
             arr.insert(int(operation[1]), int(operation[2]))
         elif operation[0] == "print":
